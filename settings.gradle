@@ -1,0 +1,3 @@
+rootProject.name = "AndroidMvvMApp"
+include ':app'
+include ':libs'
