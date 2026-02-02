@@ -21,6 +21,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".ui.activity.ShopHomeActivity"
+            android:screenOrientation="portrait"
+            android:resizeableActivity="true"
+            android:configChanges="orientation|screenSize|smallestScreenSize"/>
+
     </application>
 
 </manifest>

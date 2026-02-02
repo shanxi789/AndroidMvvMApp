@@ -1,6 +1,7 @@
 package com.shx.androidmvvmapp
 
 import com.shx.androidmvvmapp.databinding.ActivityMainBinding
+import com.shx.androidmvvmapp.ui.activity.ShopHomeActivity
 import com.shx.libs.base.BaseMvvmActivity
 import com.shx.libs.mvvm.BaseViewModel
 
@@ -8,6 +9,10 @@ class MainActivity : BaseMvvmActivity<BaseViewModel, ActivityMainBinding>() {
 
     override fun initView() {
         mBinding.tvContent.text = "哈哈哈"
+
+        mBinding.tvContent.setOnClickListener {
+            ShopHomeActivity.startShopHomeActivity(mContext)
+        }
     }
 
     override fun initData() {
